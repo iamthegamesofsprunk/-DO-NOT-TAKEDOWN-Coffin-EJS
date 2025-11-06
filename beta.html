@@ -22,6 +22,14 @@
                 justify-content: center;
                 flex-direction: column;
             }
+            
+            body, #huzz {
+            display: flex;
+                align-items: justify;
+                justify-content: center;
+                flex-direction: ;
+                flex-wrap: nowrap;
+            }
 
             #box {
                 color: #aaa;
@@ -94,6 +102,10 @@
             #top {
                 margin: 5px;
             }
+            
+            #huzz {
+                margin: 5px;
+            }
         </style>
     </head>
 
@@ -102,7 +114,10 @@
             <h1>Coffin EJS</h1>
             <img src="https://cdn.jsdelivr.net/gh/iamthegamesofsprunk/-DO-NOT-TAKEDOWN-Coffin-EJS@main/images/I_am_starving.png" alt="Logo" class="logo">
             <br>
-            <button onclick="hop_on_GN_math()">Play on GN math</button>
+        </div>
+        
+     <div id="huzz">
+     <button onclick="hop_on_GN_math()">Play on GN math</button>
 
     <script>
         function hop_on_GN_math() {
@@ -122,7 +137,9 @@
       }
     }
     </script>
-        </div>
+   
+    </div>
+     
         <div id="box">
             <input type = file id = input>
             Drag ROM file or click here
@@ -260,6 +277,7 @@
 
                 const top = document.getElementById("top");
                 top.remove();
+                huzz.remove();
                 box.remove()
                 div.appendChild(sub)
                 document.body.appendChild(div)
